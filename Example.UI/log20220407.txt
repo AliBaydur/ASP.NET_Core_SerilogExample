@@ -1,0 +1,42 @@
+2022-04-07 11:39:41.022 +03:00 [INF] Starting Web Host
+2022-04-07 11:39:44.024 +03:00 [INF] User profile is available. Using 'C:\Users\Ali\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-04-07 11:39:44.565 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-04-07 11:39:44.566 +03:00 [INF] Hosting environment: Development
+2022-04-07 11:39:44.568 +03:00 [INF] Content root path: C:\Users\Ali\Desktop\ASPNETCore_SerilogExample-master\ASPNETCore_SerilogExample-master\Example.UI
+2022-04-07 11:39:44.776 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:56341/ - -
+2022-04-07 11:39:44.859 +03:00 [INF] Executing endpoint 'Example.UI.Controllers.HomeController.Index (Example.UI)'
+2022-04-07 11:39:44.969 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Example.UI.Controllers.HomeController (Example.UI).
+2022-04-07 11:39:44.976 +03:00 [INF] Parameter 1: 5
+2022-04-07 11:39:44.979 +03:00 [INF] Parameter 2: 0
+2022-04-07 11:39:45.105 +03:00 [WRN] You cannot divide by zero.
+System.DivideByZeroException: Attempted to divide by zero.
+   at System.Decimal.DecCalc.VarDecDiv(DecCalc& d1, DecCalc& d2)
+   at System.Decimal.op_Division(Decimal d1, Decimal d2)
+   at Example.UI.Services.Concrete.MathService.Divide(Decimal parameterOne, Decimal parameterTwo) in C:\Users\Ali\Desktop\ASPNETCore_SerilogExample-master\ASPNETCore_SerilogExample-master\Example.UI\Services\Concrete\MathService.cs:line 22
+2022-04-07 11:39:45.267 +03:00 [WRN] An exception occured while dividing two numbers
+System.DivideByZeroException: Attempted to divide by zero.
+   at Example.UI.Services.Concrete.MathService.Divide(Decimal parameterOne, Decimal parameterTwo) in C:\Users\Ali\Desktop\ASPNETCore_SerilogExample-master\ASPNETCore_SerilogExample-master\Example.UI\Services\Concrete\MathService.cs:line 27
+   at Example.UI.Controllers.HomeController.Index() in C:\Users\Ali\Desktop\ASPNETCore_SerilogExample-master\ASPNETCore_SerilogExample-master\Example.UI\Controllers\HomeController.cs:line 21
+2022-04-07 11:39:45.287 +03:00 [INF] Executing ViewResult, running view Index.
+2022-04-07 11:39:45.480 +03:00 [INF] Executed ViewResult - view Index executed in 198.3732ms.
+2022-04-07 11:39:45.483 +03:00 [INF] Executed action Example.UI.Controllers.HomeController.Index (Example.UI) in 509.9782ms
+2022-04-07 11:39:45.486 +03:00 [INF] Executed endpoint 'Example.UI.Controllers.HomeController.Index (Example.UI)'
+2022-04-07 11:39:45.490 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:56341/lib/bootstrap/dist/css/bootstrap.min.css - -
+2022-04-07 11:39:45.492 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:56341/lib/jquery/dist/jquery.min.js - -
+2022-04-07 11:39:45.494 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:56341/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY - -
+2022-04-07 11:39:45.496 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:56341/css/site.css - -
+2022-04-07 11:39:45.503 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:56341/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2022-04-07 11:39:45.508 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:56341/ - - - 200 - text/html;+charset=utf-8 735.6974ms
+2022-04-07 11:39:45.522 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\Ali\Desktop\ASPNETCore_SerilogExample-master\ASPNETCore_SerilogExample-master\Example.UI\wwwroot\js\site.js'
+2022-04-07 11:39:45.522 +03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\Ali\Desktop\ASPNETCore_SerilogExample-master\ASPNETCore_SerilogExample-master\Example.UI\wwwroot\css\site.css'
+2022-04-07 11:39:45.533 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:56341/css/site.css - - - 200 1346 text/css 35.0001ms
+2022-04-07 11:39:45.532 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:56341/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY - - - 200 226 application/javascript 37.3700ms
+2022-04-07 11:39:45.548 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\Ali\Desktop\ASPNETCore_SerilogExample-master\ASPNETCore_SerilogExample-master\Example.UI\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2022-04-07 11:39:45.554 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\Ali\Desktop\ASPNETCore_SerilogExample-master\ASPNETCore_SerilogExample-master\Example.UI\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2022-04-07 11:39:45.557 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:56341/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155758 text/css 66.3750ms
+2022-04-07 11:39:45.565 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:56341/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78635 application/javascript 61.0913ms
+2022-04-07 11:39:45.574 +03:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\Ali\Desktop\ASPNETCore_SerilogExample-master\ASPNETCore_SerilogExample-master\Example.UI\wwwroot\lib\jquery\dist\jquery.min.js'
+2022-04-07 11:39:45.577 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:56341/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 85.0343ms
+2022-04-07 11:39:45.624 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:56341/favicon.ico - -
+2022-04-07 11:39:45.635 +03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\Ali\Desktop\ASPNETCore_SerilogExample-master\ASPNETCore_SerilogExample-master\Example.UI\wwwroot\favicon.ico'
+2022-04-07 11:39:45.641 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:56341/favicon.ico - - - 200 5430 image/x-icon 16.7689ms
